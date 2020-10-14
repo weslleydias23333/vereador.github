@@ -30,10 +30,18 @@ header{
     background-size: cover;
    
 }
+.image{
+ size: 1rem;
+  
+  flex:1;
+}
+.candidato-dados{
+  flex:1;
+}
 .candidato, .chapa{
     margin-top: -2rem;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
 }
 .vereador{
    font-weight: 700;

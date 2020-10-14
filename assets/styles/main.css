@@ -16,18 +16,18 @@ body {
 header{
     margin:0;
     padding:0;
+    box-shadow: #1e1e1e;
   
     
     width: 100%;
     display: flex;
-    
+  
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    background-image: url("/assets/wide.jpg");
-    background-repeat: no-repeat;
-    background-position-y:-300px ;
-    background-size: cover;
+   
+    
+    
    
 }
 .image{
@@ -62,7 +62,8 @@ header{
 
 
 section {
-  max-width: var(--sectionWidth);
+  /* max-width: var(--sectionWidth); */
+  max-width: 60%;
   margin: 40px auto;
   width: 97%;
   color: #fff;
@@ -81,7 +82,7 @@ summary {
 
 details > div {
   display: flex;
-  flex-wrap: wrap;
+  margin-right: 15px;
   overflow: auto;
   height: 100%;
   user-select: none;
@@ -91,20 +92,35 @@ details > div {
 }
 
 details > div > img {
-  align-self: flex-start;
+  /* align-self: flex-start; */
   max-width: 100%;
   margin-top: 20px;
+  
+
+  box-sizing: border-box;
 }
 
 details > div > p {
-  flex: 4;
+  flex: 1;
 }
 
 details[open] > summary {
    color: red;
 }
 
+
+details ul li {
+ margin-left: 2rem;
+}
+
 @media (min-width: 768px) {
+
+  .sumary-content{
+    display: flex;
+   flex-direction: row;
+   
+  }
+ 
   details[open] > div > p {
     opacity: 0;
     animation-name: showContent;
@@ -186,6 +202,6 @@ footer a {
 }
 
 footer a img{
-    width: 35;
-    height: 35px;
+    width: 65;
+    height: 65px;
 }

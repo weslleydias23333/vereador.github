@@ -8,35 +8,44 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+
     align-items: center;
-  
-}
-header{
-    width: 100%;
-    display:block;
 
-    position: fixed;
-   
-  
- 
-  text-align:center;
-    
-  
 }
+  header{
+      width: 100%;
+      height: 50vh;
+    text-align:center;
 
-/* .container{
-    width: 100%;
-    box-shadow: 0 4px 5px black;
-   
-    margin-bottom: 2rem;;
-} */
+
+  }
+  footer{
+  width: 100vw;
+  height: 35vh;
+  background-color: #3e3e3e;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 4rem;
+
+  }
+
+  footer .footer-title{
+
+    color:#eee;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 3rem;
+    text-shadow: 3px 3px 5px #1e1e1e;
+
+
+  }
 .container img{
     width:100%;
 }
 .div-title {
-    margin-top:1.2rem;
+    margin-top:26vh;
     text-align: center;
-    
+
     /* box-shadow: 0 1px 20px black; */
     color:#FFF;
     font-weight: 800;
@@ -44,22 +53,80 @@ header{
     text-shadow: 2px 2px 2px #2b2929;
 }
 
+
 @media only screen and (min-width: 769px) {
 
-    body{
-      background-image: url("https://marlacummins.com/wp-content/uploads/2014/03/Work_In_Progress.png");
-      background-repeat: no-repeat;
-    }
-    .card{
-        display: none;
-    }
-    header {
-        display: none;
-    }
-    
-}
+        .card{
+            width: 80vw;
+            /* height: 30rem; */
+            margin-top:3.5rem;
+            margin-bottom: 1.2rem;
+            /* background-color: rgba(12, 68, 9, 0.186); */
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom: 4rem solid  #366769;
+            box-shadow: 0 1px 4px  black;
+        }
+
+        .card >div > .image {
+            text-align: center;
+        }
+        .card .card-title{
+            font-weight: bold;
+            font-size: 0.6rem;
+            color:#e6e6e6;
+            padding:20px;
+            background-color:#01013ae0;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+
+        }
+
+        .card .image img{
+            margin:1rem 5px 5px 5px;
+            width: 20rem;
+            height: 250px;
+            border-radius: 4px;
+            border-bottom-left-radius: 25px;
+            border-top-right-radius: 25px;
+            box-shadow: 1px 1px 50px rgb(131, 130, 130);
+            padding:1rem;
+            background-color:#3b355b06;
+
+        }
+        .card-content {
+          display: flex;
+          align-items: center;
+        }
+        .card-image{
+          flex:1;
+        }
+
+        .card-content .conteudo{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            text-align: justify;
+            font-size: 24px;
+            flex:1;
+        }
+        .card-content .conteudo ul {
+            padding:10px;
+            margin:4px;
+        }
+        .card-content .conteudo ul li{
+            margin:10px;
+        }
+
+
+  }
+
+
 
 @media only screen and (max-width: 768px) {
+
+
     .card{
         width: 95vw;
         /* height: 30rem; */
@@ -78,13 +145,14 @@ header{
     }
     .card .card-title{
         font-weight: 800;
-        font-size: 2rem;
+        font-size: 3rem;
+        text-shadow: 3px 3px 5px #1e1e1e;
         color:#e6e6e6;
         padding:20px;
         background-color:#01013ae0;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
-       
+
     }
     .card .image img{
         margin:1rem 5px 5px 5px;
@@ -96,14 +164,16 @@ header{
         box-shadow: 1px 1px 50px rgb(131, 130, 130);
         padding:1rem;
         background-color:#3b355b06;
-    
+
     }
-    
+
     .card-content .conteudo{
         padding-left: 1rem;
         padding-right: 1rem;
         text-align: justify;
-        font-size: 24px;
+        font-size: 18px;
+        font-weight: 200;
+        text-shadow: 0 0 0  1px #1e1e1e;
     }
     .card-content .conteudo ul {
         padding:10px;
@@ -114,33 +184,24 @@ header{
     }
 
     footer{
-       
-        width: 100vw;
-        height: 200px;
-        padding:0;
+      height: 40vh;
+       z-index: -1;
 
-
-        background-color: #1e1e1e;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    footer a{
-        text-decoration: none;
-    }
-    footer img{
-        margin:5px;
     }
     footer .footer-title{
-        text-align: center;
-        color:#eee;
-        font-size: 12px;
-        line-height: 12px;
+      font-size: 20px;
+
     }
+
+     .div-footer-mark{
+       margin-bottom: -5.1rem;;
+       width: 100%;
+       height: 5vh;
+       background: white;
+       border-bottom-right-radius:80px;
+       border-bottom-left-radius: 80px;
+
+     }
 
 
 }
-
-

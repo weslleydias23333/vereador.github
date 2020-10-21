@@ -4,36 +4,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/parallax.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    </script>
     <title>Weslley Dias 23333</title>
 </head>
 <body>
-    <header class="header-paralax"></header>
-    <nav class="nav-paralax">
+        <header class="header-paralax">
+        <image> <img src="https://scontent.ffrc5-1.fna.fbcdn.net/v/t1.0-9/120500305_2749113915376504_2443700209618893410_n.jpg?_nc_cat=101&_nc_sid=e3f864&_nc_ohc=3bv7oiYB2Y0AX9uuOrz&_nc_ht=scontent.ffrc5-1.fna&oh=5b7dd864b007c1ffd5f02b8949bde032&oe=5FB5A7FB" alt=""> <image>
+        </header>
+
+    <div class="navbar">
+
+      <a class="active" href="#article1"><i class="fa fa-fw fa-home"></i> Quem sou</a>
+      <a href="#article2"><i class="fa fa-fw fa-search"></i> Minha trajetória</a>
+      <a href="#article3"><i class="fa fa-fw fa-envelope"></i> Funções de um vereador</a>
+
+    </div>
+    <!-- <nav class="nav-paralax">
         <ul>
             <li><a href="#article1" class="active">Quem sou</a></li>
             <li><a href="#article2">Minha Trajetória</a></li>
             <li><a href="#article3">O que faz um vereador?</a></li>
         </ul>
-       
-    </nav>
-  
-    <main>
-      
 
-   </main> 
-   
-   <div class="article1" id="article1"></div>
-   <div class="article2" id="article2"></div>
-   <div class="article3" id="article3">
-      
+    </nav> -->
+
+    <main>
+
+
+   </main>
+
+   <div class="article1" id="article1">
 
    </div>
-   
+   <div class="article2" id="article2"></div>
+   <div class="article3" id="article3">
+
+
+   </div>
+
    <div class="div-image">
     ^
 </div>
    <footer>
-      
+
     <div class="footer-title">
           <p>Me acompanhe nas redes sociais!</p>
       </div>
@@ -54,7 +71,34 @@
 
       </div>
   </footer>
-  
-    
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 </body>
 </html>

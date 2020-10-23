@@ -95,7 +95,7 @@ p{
     main .carousel-item img{
       padding:1rem;
       border-top-left-radius: 80px;
-        border-bottom-right-radius: 80px;
+      border-bottom-right-radius: 80px;
     }
 
     .card h5{

@@ -1,218 +1,132 @@
 :root{
-    --primary-color:#1f1f51;
-    --secondary-color:#366769;
+    --primary-color:#0d0dd393;
+    --secondary-color:#36676958;
     --text-color-primary:#1e1e1e;
     --text-color-secondary:#FFFFFF;
 }
 
-*{
+*,
+html,
+body,
+p{
     padding:0;
     margin:0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* color:#fff; */
 }
 
-
-    .header-paralax {
-        /* background-image: url("https://scontent.ffrc5-1.fna.fbcdn.net/v/t1.0-9/120500305_2749113915376504_2443700209618893410_n.jpg?_nc_cat=101&_nc_sid=e3f864&_nc_ohc=3bv7oiYB2Y0AX9uuOrz&_nc_ht=scontent.ffrc5-1.fna&oh=5b7dd864b007c1ffd5f02b8949bde032&oe=5FB5A7FB"); */
-        /* background-size: cover; */
-        width: 100%;
-        background-color: rgb(215, 238, 130);
-        /* background-size: 100%; */
-        /* background-repeat: no-repeat; */
-        position: fixed;
-        min-height: 150px;
-        max-height: 150px;
-    }
-    .header-paralax  img{
-      width: 100%;
+@media only screen and (max-width:480px){
+    body{
+       height: 170vh;
     }
 
-    main {
-        background: #c98f09;
-        position: relative;
-        top: 300px;
-
-        height: 100vh;
-        /* z-index: -1; */
-    }
-     .navbar {
-        margin:auto;
-        position: relative;
-        width: 99%;
-        top: 8.3rem;
+    .topo{
         display: flex;
-        flex-direction:column;
-        justify-content: center;
-        align-items: center;
-        overflow: auto;
+        flex-direction: column;
+       
+    }
 
+    container{
+        width: 97vw;
+
+    }
+
+    container .image{
+        background-image: url("https://scontent.ffrc5-1.fna.fbcdn.net/v/t1.0-9/118760752_2723954564559106_3654377760569275194_n.jpg?_nc_cat=105&ccb=2&_nc_sid=174925&_nc_ohc=K7TKgaRjz-wAX-p-n7E&_nc_ht=scontent.ffrc5-1.fna&oh=a29910ea693651a9c91f7c13f7c69d03&oe=5FB75BAA");
+        background-color: rgb(43, 43, 34);
+        height: 50vh;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin:auto;
+       
+    }
+
+    container .topo .chapa #vereador{
+        text-align: left;
+        padding-left:1rem;
+
+        font-size: 2rem;
+        background-color: var(--primary-color);
+    }
+    
+    
+    container .topo .chapa #nome{
+        text-align: center;
+        margin-top:-1rem;
+        font-weight: bold;
+        font-size: 4rem;
+        height: 4.5rem;
+        line-height: 4rem;
+        font-weight: 50px;
+        background-color: var(--secondary-color);
+    }
+      
+ 
+    container .topo .chapa #numChapa{
+       color:blue;
+       text-align: right;
+       color:#fff;
+       font-weight: bold;
+      
+
+        font-size: 4.5rem;
+        line-height: 4rem;
+        padding-right:1rem;
+        background-color: var(--primary-color);
+        margin-bottom:12rem;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100vh
+      }
+  
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        
+  
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
       }
 
-.navbar a {
-  /* float: left; */
-  width:100%;
-  background-color: #555;
-  margin:1px;
-  font-weight: bold;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
+      .card{
+          width:95%;
+          background-color: wheat;
+      }
 
-}
+      .card .card-title{
+          font-size: 32px;
+          height: 8vh;
+          line-height: 8vh;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          background-color: var(--primary-color);
+          margin-bottom: 2rem;
+      } 
 
+      .card image {
 
+          margin:5px;
+          width: 60px;
+      }
 
-
-
-
-
-
-
-
-
-    /*
-
-    nav ul {
-
-        height: 80px;
-        line-height: 80px;
-
-
-    }
-
-    nav ul,
-    nav li{
-        flex:1;
-        list-style-type: none;
-        text-align: center;
-        margin:0;
-        padding: 0;
-        line-height: 15px;
-    }
-    nav ul  a {
-       text-decoration: none;
-       display: block;
-       padding:15px;
-       font-size: 24px;
-       font-weight: bold;
-       color:white;
-       height: 100px;;
-       text-transform: uppercase;
-       color:#727272;
-       margin-left:3px ;
-       margin-right:3px ;
-
-    } */
-    .article1 {
-        background: #0916c9;
-        background-image: url("https://scontent-msp1-1.xx.fbcdn.net/v/t1.0-9/121481814_2760259404261955_1941939467587438103_o.jpg?_nc_cat=101&_nc_sid=84a396&_nc_ohc=Ys8fge-UsWgAX-r4A8u&_nc_ht=scontent-msp1-1.xx&oh=95a5c0f2eb723b89bc9783b3a022515b&oe=5FB6DC8A");
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        background-position-x:-28px;
-        top: 300px;
-        font-family: 'Raleway', sans-serif;
-        height: 100vh;
-        z-index: -1;
-    }
-    .article2 {
-        background: #a38f5f;
-        position: relative;
-        top: 300px;
-        font-family: 'Raleway', sans-serif;
-        height: 150vh;
-
-    }
-    .article3 {
-        background: #0986c9;
-        position: relative;
-        top: 300px;
-        font-family: 'Raleway', sans-serif;
-        height: 100vh;
-        z-index: -1;
-
-    }
-    .article1,
-    .article2,
-    .article3{
-        margin:auto;
-        margin-top:3rem;
-
-    }
-
-/* @media (min-width: 501px) {
-    .header-paralax {
-        background-image: url("https://scontent.ffrc5-1.fna.fbcdn.net/v/t1.0-9/120500305_2749113915376504_2443700209618893410_n.jpg?_nc_cat=101&_nc_sid=e3f864&_nc_ohc=3bv7oiYB2Y0AX9uuOrz&_nc_ht=scontent.ffrc5-1.fna&oh=5b7dd864b007c1ffd5f02b8949bde032&oe=5FB5A7FB");
-        background-size: cover;
-        width: 100%;
-        background-size: 100%;
-        background-color: rgb(97, 21, 97);
-        background-repeat: no-repeat;
-        position: fixed;
-        height: 500px;
-    }
-
-    main {
-        background: #E7E3DA;
-        position: relative;
-        top: 600px;
-        font-family: 'Raleway', sans-serif;
-    }
-
-} */
-
-
-/* header{
-    background-image: url("https://scontent.ffrc5-1.fna.fbcdn.net/v/t1.0-9/120500305_2749113915376504_2443700209618893410_n.jpg?_nc_cat=101&_nc_sid=e3f864&_nc_ohc=3bv7oiYB2Y0AX9uuOrz&_nc_ht=scontent.ffrc5-1.fna&oh=5b7dd864b007c1ffd5f02b8949bde032&oe=5FB5A7FB");
-    background-repeat: no-repeat;
-    background-size: 100%;
-   height: 380px;
-
-   top:0;
-   left: 0;
-
-
-} */
-
-/* footer{
-    background-color: #2e2e2e;
-    height: 30vh;
-
-
-  } */
-  /* footer .footer-title{
-    font-size: 20px;
-
-  } */
-
-   /* .div-footer-mark{
-     margin-bottom: -5.2rem;;
-     width: 100%;
-     height: 5vh;
-     background: white;
-     border-bottom-right-radius:80px;
-     border-bottom-left-radius: 80px;
-
-   } */
-   footer{
-    width: 100vw;
-    height: 35vh;
-    background-color: #3e3e3e;
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 4rem;
-
-    }
-
-    footer .footer-title{
-
-      color:#eee;
-      font-weight: 900;
-      font-size: 24px;
-      margin-bottom: 3rem;
-      text-shadow: 3px 3px 5px #1e1e1e;
-
+       img{
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
 
     }

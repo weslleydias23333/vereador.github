@@ -15,7 +15,7 @@ p{
     font-family: 'Poppins', sans-serif;
     /* color:#fff; */
 }
-/* 
+/*
 @media only screen and (max-width:480px){ */
     body{
        height: 170vh;
@@ -24,7 +24,8 @@ p{
     .topo{
         display: flex;
         flex-direction: column;
-       
+        height: 100vh;
+
     }
 
     container{
@@ -40,8 +41,9 @@ p{
         background-size: contain;
         background-repeat: no-repeat;
         margin:auto;
-       
+
     }
+
 
     container .topo .chapa #vereador{
         text-align: left;
@@ -50,26 +52,26 @@ p{
         font-size: 2rem;
         background-color: var(--primary-color);
     }
-    
-    
+
+
     container .topo .chapa #nome{
         text-align: center;
-        margin-top:-1rem;
+        /* margin-top:-1rem; */
         font-weight: bold;
-        font-size: 4rem;
+        font-size: 6rem;
         height: 4.5rem;
         line-height: 4rem;
         font-weight: 50px;
         background-color: var(--secondary-color);
     }
-      
- 
+
+
     container .topo .chapa #numChapa{
        color:blue;
        text-align: right;
        color:#fff;
        font-weight: bold;
-      
+
 
         font-size: 4.5rem;
         line-height: 4rem;
@@ -77,56 +79,43 @@ p{
         background-color: var(--primary-color);
         margin-bottom:12rem;
     }
+    .carouselExampleControls{
+      padding-rigth: 1rem;
+      padding-left: 1rem;
 
-    .swiper-container {
-        width: 100%;
-        height: 100vh
-      }
-  
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        
-  
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+    }
+    main{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    main .carousel-item{
+      height: 85vh;
 
-      .card{
-          width:95%;
-          background-color: wheat;
-      }
+    }
+    main .carousel-item img{
+      padding:1rem;
+      border-top-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+    }
 
-      .card .card-title{
-          font-size: 32px;
-          height: 8vh;
-          line-height: 8vh;
-          border-top-left-radius: 10px;
-          border-top-right-radius: 10px;
-          background-color: var(--primary-color);
-          margin-bottom: 2rem;
-      } 
+    .card h5{
+      font-size: 34;
+      font-weight: bold;
+      color:red;
+    }
+    .card .card-subtitle{
+      font-size: 32px
+    }
+    .card ul{
+      padding-left: 1rem;
+      paddinf-right:1rem;
+    }
+    .card ul li{
 
-      .card image {
+      text-align: justify;
+      font-size: 24px
+    }
 
-          margin:5px;
-          width: 60px;
-      }
 
-       img{
-        border-top-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-      }
 
     }

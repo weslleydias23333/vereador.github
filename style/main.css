@@ -26,6 +26,7 @@ p{
         flex-direction: column;
         height: 100vh;
 
+
     }
 
     container{
@@ -48,7 +49,6 @@ p{
     container .topo .chapa #vereador{
         text-align: left;
         padding-left:1rem;
-
         font-size: 2rem;
         background-color: var(--primary-color);
     }
@@ -101,7 +101,7 @@ p{
     .card h5{
       font-size: 34;
       font-weight: bold;
-      color:red;
+      color:#1e1e1;
     }
     .card .card-subtitle{
       font-size: 32px

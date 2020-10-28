@@ -2,14 +2,15 @@
     border-radius: 5px;
     cursor: pointer;
     opacity: 0.7;
-    transition: 0.7s;
+    transition: 2s;
   }
-  
+
   #myImg:hover {
-    width:20%;
+
     opacity: 1;
+    transition: 2s;
     }
-  
+
   /* The Modal (background) */
   .modal {
     display: none; /* Hidden by default */
@@ -24,7 +25,7 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
-  
+
   /* Modal Content (image) */
   .modal-content {
     margin: auto;
@@ -32,7 +33,7 @@
     width: 100%;
     /* max-width: 700px; */
   }
-  
+
   /* Caption of Modal Image */
   #caption {
     margin: auto;
@@ -53,13 +54,14 @@
   }
   .images img{
       box-sizing: border-box;
-      width: 15%;
+
       margin:0.3rem;
+      flex:1;
 
       -webkit-box-shadow: 1px 1px 1px 1px rgba(49,59,31,1);
       -moz-box-shadow:1px 1px 1px 1px rgba(49,59,31,1);
       box-shadow: 1px 1px 1px 1px rgba(49,59,31,1);
-      
+
   }
 
   @media only screen (max-width:600px){
@@ -72,12 +74,21 @@
     .images img{
         box-sizing: border-box;
         width: 1fr;
-        height: 100px;
+
         margin:0.5rem;
 
         -webkit-box-shadow:1px 1px 1px 1px rgba(49,59,31,1);
         -moz-box-shadow:1px 1px 1px 1px rgba(49,59,31,1);
         box-shadow: 1px 1px 1px 1px rgba(49,59,31,1);
-        
+
     }
+
+    footer .link img{
+      width: 0.3rem;
+      margin:5px;
+    }
+    footer .siga-me{
+      font-size: 3rem;
+    }
+
   }

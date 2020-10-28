@@ -20,11 +20,11 @@ header{
 }
 .main{
   width: 100%;
-  padding: 1rem;
+  padding: 0.2rem;
 }
 header  img{
   width: 100%;
-  
+
 }
 header .chapa{
   display: none;
@@ -33,6 +33,8 @@ header .chapa{
   -webkit-box-shadow:5px 5px 5px 3px rgba(49,59,31,1);
   -moz-box-shadow:5px 5px 5px 3px rgba(49,59,31,1);
   box-shadow: 5px 5px 5px 3px rgba(49,59,31,1);
+  border-radius: 10px !important;
+  /* height: 190vh!important; */
 }
 
 .card-body p{
@@ -44,9 +46,58 @@ header .chapa{
 }
 .card #legenda-foto{
   margin-left: 2rem;
-  
+
 }
+
+
 footer{
+  width:100%;
   background-color: #3e3e3e;
-  height: 150px;;
+  position: relative;
+  height: 280px;
+  padding:1rem;
+
+}
+footer p{
+  text-align: center;
+  color:#FFFFF1;
+  font-weight: bold;
+}
+footer .link{
+   display: flex;
+   justify-content: center;
+   margin:auto;
+}
+footer .link img{
+  width: 4rem;
+  margin:5px;
+}
+
+footer p{
+  margin:0;
+  padding:0;
+
+}
+footer .footer-chapa{
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+footer #vereador{
+  font-size: 12px;
+  text-align: left;
+
+}
+
+footer #nome{
+  font-size: 45px;
+
+}
+
+footer #chapa{
+  font-size: 48px;
+  padding-top:-7rem;
+margin-bottom:3rem;
 }

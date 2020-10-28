@@ -73,7 +73,7 @@
     }
     .images img{
         box-sizing: border-box;
-        width: 1fr;
+        width: 240px;
 
         margin:0.5rem;
 

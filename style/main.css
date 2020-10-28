@@ -37,7 +37,7 @@ header .chapa{
 .card{
   -webkit-box-shadow:1px 1px 1px 3px rgba(49,59,31,1);
   -moz-box-shadow:1px 1px 1px 3px rgba(49,59,31,1);
-  box-shadow: 1px 1px 1px 3px rgba(49,59,31,1);
+  box-shadow: 5px 5px 5px 2px rgba(49,59,31,.2);
   border-radius: 10px !important;
   /* height: 190vh!important; */
   max-width: 96%;

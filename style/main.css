@@ -54,7 +54,7 @@ footer{
   width:100%;
   background-color: #3e3e3e;
   position: relative;
-  height: 280px;
+  height: 350px;
   padding:1rem;
 
 }
@@ -67,9 +67,12 @@ footer .link{
    display: flex;
    justify-content: center;
    margin:auto;
+   margin-bottom: 3rem;
 }
 footer .link img{
-  width: 4rem;
+  margin-top:3rem;
+  width:35px;
+  height: 35px;
   margin:5px;
 }
 
@@ -78,8 +81,9 @@ footer p{
   padding:0;
 
 }
+
 footer .footer-chapa{
-  margin:auto;
+  margin:3rem auto;
   display: flex;
   flex-direction: column;
   max-width: 300px;
@@ -98,6 +102,6 @@ footer #nome{
 
 footer #chapa{
   font-size: 48px;
-  padding-top:-7rem;
+
 margin-bottom:3rem;
 }
